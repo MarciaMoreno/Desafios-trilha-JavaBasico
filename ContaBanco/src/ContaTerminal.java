@@ -31,10 +31,32 @@ public class ContaTerminal {
             System.out.println("_____________________________________________________________________");
             System.out.println("BANCO OURIVES");
             System.out.println("AGENCIA " + agencia + "- Rua Comendador Filho 208 - Centro - São Paulo / SP");
-            System.out.println("Seja Bem vindo" + nomeCliente);
-            System.out.println("Sua conta corrente" + numeroConta + " Possui o saldo de R$ 1.200 ");
+            System.out.println("Seja Bem vindo " + nomeCliente);
+            System.out.println("Sua conta corrente nº " + numeroConta + " / Possui o saldo de R$ 1.200 ");
+            System.out.println("_____________________________________________________________________");
+            System.out.println("_____________________________________________________________________");
+            System.out.println("O QUE DESEJA FAZER? ");
+            System.out.println("Digite 1 PARA SAQUE" );
+            System.out.println("Digite 2 PARA SAIR" );
+            int escolha = scanner.nextInt();
+            if (escolha == 1) {
+                int saldo = 1200;
+                System.out.println("Digite o valor do saque: ");
+                int saque = scanner.nextInt();
+                System.out.println("_____________________________________________________________________");
+                System.out.println("PRONTO, RETIRE O DINHEIRO NO LOCAL INDICADO");
+                System.out.println("_____________________________________________________________________");
+
+                int novoSaldo = saque - saldo;
+                System.out.println("SEU NOVO SALDO: " + -novoSaldo);
+                
+            }else System.out.println("OBRIGADO POR UTILIZAR O NOSSO BANCO");  
+
+
+
         }else System.out.println("SENHA INCORRETA");  
 
+       
        
     }
 }
