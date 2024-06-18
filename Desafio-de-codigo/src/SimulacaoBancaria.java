@@ -4,7 +4,7 @@ public class SimulacaoBancaria {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        double saldo = 0; 
+        double saldo = 0;         
         boolean continuar = true;
 
         while (continuar) {
@@ -12,7 +12,7 @@ public class SimulacaoBancaria {
             switch (opcao) {
                 case 1:
                     // TODO: Ler o valor a ser depositado e atualizar/imprimir o saldo.
-                    double valorDeposito = scanner.nextDouble();
+                    double valorDeposito = scanner.nextDouble();                    
                     double saldoAtual = valorDeposito + saldo;
                     System.out.println("Saldo atual: "+saldoAtual);
                     break;
@@ -20,15 +20,14 @@ public class SimulacaoBancaria {
                 case 2:
                     // TODO: Ler o valor a ser sacado e verificar/imprimir se há saldo suficiente.
                     double valorSaque = scanner.nextDouble();
-                    double saldoSaque = saldo - valorSaque;
+                    double saldoSaque = saldo;
                     if(valorSaque < saldoSaque){
-                        System.out.println("Saldo atual: "+saldoSaque);
-                        System.out.println("Retire o dinheiro no local indicado");
                         double novoSaldo = saldoSaque - valorSaque;
-                        System.out.println("\n"+novoSaldo);
+                        System.out.println("Saldo Atual: "+novoSaldo);
                     }else{
                         System.out.println("Saldo insuficiente");
                     }
+                    saldoAtual = saldo;
                     break;
                     
                 case 3:
