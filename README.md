@@ -1,5 +1,3 @@
 # dio-trilha-JavaBasico
-Diretorio para armazenar as atividades codificadas durante as aulas.
+Diretorio para armazenar as atividades DESAFIO DIO - Sobre a orientação do professor Gleyson Sampaio. 
 
-# Alteraçõs
-Alterando arquivos para preparação das aulas.
